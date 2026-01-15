@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github } from 'lucide-react';
 import Section from '../components/Section';
 import { PROJECTS } from '../data/content';
 
@@ -42,24 +41,10 @@ export default function Projects() {
             transition={{ delay: index * 0.1 }}
             className="bg-zinc-900/50 border border-zinc-800 rounded-xl p-6 hover:border-blue-500/50 transition-all group"
           >
-            <div className="flex items-start justify-between mb-4">
+            <div className="mb-4">
               <span className="px-2 py-1 bg-blue-500/10 text-blue-400 text-xs rounded">
                 {project.category}
               </span>
-              <div className="flex gap-2">
-                <a
-                  href={project.github}
-                  className="text-zinc-500 hover:text-white transition-colors"
-                >
-                  <Github size={18} />
-                </a>
-                <a
-                  href="#"
-                  className="text-zinc-500 hover:text-white transition-colors"
-                >
-                  <ExternalLink size={18} />
-                </a>
-              </div>
             </div>
 
             <h3 className="text-lg font-semibold text-white mb-2 group-hover:text-blue-400 transition-colors">
