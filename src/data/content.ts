@@ -1,42 +1,27 @@
 export const PROFILE = {
   name: "Abhishek Kale",
   tagline: "Building scalable solutions at the intersection of Software, Data, and Business.",
-  subtitle: "Software Engineer turned Consultant and Analyst with global experience across enterprise systems, analytics, and strategy.",
+  subtitle: "Software Engineer turned Technical Consultant and Data Analyst with global experience across enterprise systems, analytics, and strategy.",
   github: "https://github.com/abhishekkale2209",
-  linkedin: "https://linkedin.com/in/abhishekkale",
-  email: "abhishek@example.com",
+  linkedin: "https://www.linkedin.com/in/abhishekkaleak47/",
+  email: "abhishekkale.tech1998@gmail.com",
+  phone: ["+44 7442259621", "+91 9607055147"],
   location: "UK / India",
 };
 
-export const BOOT_SEQUENCE = [
-  { text: "GRUB Loading abhishek.io kernel...", delay: 0 },
-  { text: "", delay: 300 },
-  { text: "[    0.001] Initializing Abhishek Kale v2.0...", delay: 500 },
-  { text: "[    0.124] Loading core modules:", delay: 800 },
-  { text: "            ├── software-engineering.ko .............. [OK]", delay: 1000 },
-  { text: "            ├── data-analytics.ko .................... [OK]", delay: 1200 },
-  { text: "            ├── business-strategy.ko ................. [OK]", delay: 1400 },
-  { text: "            └── consulting.ko ........................ [OK]", delay: 1600 },
-  { text: "", delay: 1800 },
-  { text: "[    1.205] Mounting experience:", delay: 2000 },
-  { text: "            ├── /avaya (1.5 years) ................... [OK]", delay: 2200 },
-  { text: "            └── /footfallcam (500+ accounts) ......... [OK]", delay: 2400 },
-  { text: "", delay: 2600 },
-  { text: "[    2.891] Fetching github.com/abhishekkale2209...", delay: 2800 },
-  { text: "            ├── Portfolio Projects ................... [OK]", delay: 3000 },
-  { text: "            ├── Data Analysis Work ................... [OK]", delay: 3200 },
-  { text: "            └── Open Source Contributions ............ [OK]", delay: 3400 },
-  { text: "", delay: 3600 },
-  { text: "[    3.500] System ready. Welcome to abhishek.io 🚀", delay: 3800 },
-];
-
 export const ABOUT = {
   intro: `I'm Abhishek Kale — a Computer Engineering graduate with a passion for building systems that scale and solving problems that matter.`,
-  body: `With 1.5+ years at Avaya working on enterprise-grade communication platforms, Linux infrastructure, and virtualization, I developed a deep understanding of how mission-critical systems operate. I then transitioned to FootfallCam, where I managed 500+ global accounts, designed analytics dashboards for brands like Pandora and The Body Shop, and led consulting engagements across Europe, GCC, and beyond.
+  body: `With 1.5+ years at Avaya working on enterprise-grade communication platforms, Linux infrastructure, and virtualization on a $500M project, I developed a deep understanding of how mission-critical systems operate.
 
-After completing my MBA with Distinction in the UK, I'm now focused on roles that sit at the intersection of data, technology, and business strategy — whether that's Data Analytics, Business Analysis, Consulting, or Product.`,
+At FootfallCam, I served as a Technical Consultant managing 500+ global accounts, handling customer data pipelines, IoT device health monitoring, and providing data-driven insights to clients across Europe, GCC, and beyond.
+
+At Lloyds Metals and Energy Limited, I monitored production projects using live machine data, applied data engineering techniques for cleaning and transformation, and built Power BI dashboards for production issues and failure analysis.
+
+Currently at Infinite, I support 500+ Avaya customers working with KVM, Docker, Kubernetes, and microservices architecture.
+
+After completing my MBA with Distinction in the UK, I'm focused on roles at the intersection of data, technology, and business strategy.`,
   stats: [
-    { value: "1.5+", label: "Years at Avaya" },
+    { value: "$500M", label: "Avaya Project" },
     { value: "500+", label: "Global Accounts" },
     { value: "MBA", label: "with Distinction" },
     { value: "9.4", label: "CGPA Bachelor's" },
@@ -45,26 +30,75 @@ After completing my MBA with Distinction in the UK, I'm now focused on roles tha
 
 export const EXPERIENCE = [
   {
+    id: "infinite",
+    company: "Infinite Computer Solutions",
+    role: "Systems Engineer",
+    duration: "Current",
+    location: "India",
+    problem: "Supporting 500+ enterprise customers running Avaya communication platforms requiring high availability and rapid incident resolution.",
+    approach: "Managing containerized deployments with Docker and Kubernetes. Implementing monitoring with Grafana. Working with KVM virtualization and microservices using Spring Boot.",
+    outcome: "Ensuring 99.9% uptime for mission-critical communication systems across 500+ enterprise customers.",
+    tech: ["KVM", "Docker", "Kubernetes", "Grafana", "Spring Boot", "Microservices"],
+  },
+  {
+    id: "lloyds",
+    company: "Lloyds Metals and Energy Limited",
+    role: "Data Analyst",
+    duration: "Contract",
+    location: "India",
+    problem: "Steel production operations required real-time monitoring of live machine data and business metrics for a major industrial project.",
+    approach: "Monitored production projects using live machine and business data. Applied data engineering techniques for data cleaning and transformation. Built Power BI dashboards for production monitoring, failure analysis, and operational insights.",
+    outcome: "Enabled data-driven decision making for production optimization and reduced downtime through proactive failure analysis.",
+    tech: ["SQL", "Python", "Power BI", "Data Engineering", "Data Analytics"],
+  },
+  {
+    id: "footfallcam",
+    company: "FootfallCam",
+    role: "Technical Consultant",
+    duration: "~1 year",
+    location: "UK (Global clients)",
+    problem: "Global retail and enterprise clients needed technical expertise for IoT device health monitoring, data pipeline management, and actionable analytics insights.",
+    approach: "Managed customer data pipelines and performed data cleaning/transformation. Monitored product health of IoT devices across deployments. Consulted clients on data-driven insights for Pandora, The Body Shop, B&Q, L'Occitane, National Gallery, Sky UK. Led UK technical team of 4.",
+    outcome: "Ensured data quality and IoT system reliability across 500+ accounts. Delivered technical solutions for NEOM and international airport tenders.",
+    tech: ["Odoo", "SQL", "Python", "Databricks", "Power BI", "REST APIs", "IoT"],
+  },
+  {
     id: "avaya",
     company: "Avaya",
     role: "Software Development Engineer",
     duration: "1.5 years",
     location: "India (US-led teams)",
-    problem: "Enterprise communication platforms required reliable, secure, and scalable infrastructure across global deployments.",
-    approach: "Worked on Linux-based systems, KVM virtualization, and on-prem servers. Acted as Product Owner for Avaya Virtualization Platform (AVP) and Avaya Service Platform (ASP). Delivered Terraform-based PoC for Azure VM provisioning.",
-    outcome: "Contributed to a $50M MOD Algeria government project. Led technical assessments during Log4j security incident. Improved system reliability and automation readiness in mission-critical deployments.",
-    tech: ["Linux", "Unix", "KVM", "VMware", "Terraform", "Azure", "Python", "Bash"],
+    problem: "Enterprise communication platforms required reliable, secure, and scalable infrastructure for a $500M government project.",
+    approach: "Worked on Linux-based systems, KVM virtualization, and on-prem servers. Acted as Product Owner for AVP and ASP. Delivered Terraform-based PoC for Azure.",
+    outcome: "Contributed to $500M MOD Algeria government project. Led technical assessments during Log4j security incident.",
+    tech: ["Linux", "Azure", "VMware", "RedHat", "Terraform", "Python", "Bash"],
+  },
+];
+
+export const INTERNSHIPS = [
+  {
+    id: "cdac",
+    company: "CDAC India",
+    role: "Research Intern",
+    description: "Developed AR-based cognitive learning solutions using Unity3D and machine learning.",
+    tech: ["Unity3D", "C#", "ML", "Android", "AR", "VR"],
+    publication: {
+      title: "Real-Time Interactive AR for Cognitive Learning",
+      link: "https://link.springer.com/chapter/10.1007/978-3-031-29713-7_12",
+      publisher: "Springer",
+    },
   },
   {
-    id: "footfallcam",
-    company: "FootfallCam",
-    role: "Consulting, Analytics & Sales Engineering",
-    duration: "~1 year",
-    location: "UK (Global clients)",
-    problem: "Global retail and enterprise clients needed actionable insights from people-counting and analytics data to drive business decisions.",
-    approach: "Managed end-to-end sales and consulting lifecycle. Designed analytics dashboards for Pandora, The Body Shop, B&Q, L'Occitane, National Gallery, Sky UK. Consulted telecom operators including Airtel and Vodafone Idea. Led UK team of 4.",
-    outcome: "Drove data-backed decisions across 500+ accounts. Contributed to tenders for NEOM and international airports. Introduced CRM and AI-based prospecting improvements in Odoo.",
-    tech: ["SQL", "Power BI", "REST APIs", "Python", "Excel", "Odoo CRM", "Data Visualization"],
+    id: "makois",
+    company: "Makois",
+    role: "ML/AI Intern",
+    description: "Worked on NLP and language models for AI applications.",
+    tech: ["NLP", "BERT", "GPT", "ML", "AI"],
+    publication: {
+      title: "Published Research",
+      link: "https://www.linkedin.com/in/abhishekkaleak47/overlay/1734177876199/single-media-viewer/?profileId=ACoAACR0k4sBif1EffOcfVsI8zF7SVIHcvY_Nvw",
+      publisher: "LinkedIn",
+    },
   },
 ];
 
@@ -94,9 +128,10 @@ export const CERTIFICATIONS = [
 ];
 
 export const SKILLS = {
-  "Programming & Data": ["Python", "SQL", "Java", "JavaScript", "Bash", "Data Structures"],
-  "Cloud & Systems": ["Linux", "Unix", "KVM", "VMware", "Terraform", "Azure", "Enterprise Servers"],
-  "Analytics & BI": ["Power BI", "Excel", "Data Visualization", "REST APIs", "SaaS Analytics"],
+  "Programming & Data": ["Python", "SQL", "Java", "JavaScript", "Bash", "C#"],
+  "Cloud & Infrastructure": ["Linux", "Azure", "VMware", "RedHat", "KVM", "Docker", "Kubernetes"],
+  "Analytics & BI": ["Power BI", "Databricks", "Grafana", "Data Engineering", "Data Visualization", "REST APIs"],
+  "AI & ML": ["NLP", "BERT", "GPT", "Machine Learning", "Unity3D", "AR/VR"],
   "Consulting & Strategy": ["Stakeholder Management", "Solution Design", "Project Management", "Business Analysis", "Agile"],
 };
 
@@ -106,21 +141,18 @@ export const PROJECTS = [
     category: "Software",
     description: "Automated VM provisioning on Microsoft Azure using Terraform for enterprise deployment.",
     tech: ["Terraform", "Azure", "Python"],
-    github: "#",
   },
   {
     title: "Retail Analytics Dashboards",
     category: "Data",
     description: "Custom analytics dashboards for global brands including Pandora, The Body Shop, and B&Q.",
     tech: ["Power BI", "SQL", "REST APIs"],
-    github: "#",
   },
   {
-    title: "CRM Process Optimization",
-    category: "Consulting",
-    description: "Introduced AI-based prospecting and process improvements in Odoo CRM for sales efficiency.",
-    tech: ["Odoo", "Python", "Process Design"],
-    github: "#",
+    title: "Production Monitoring System",
+    category: "Data",
+    description: "Real-time production monitoring and failure analysis dashboards for steel manufacturing.",
+    tech: ["Power BI", "Python", "SQL", "Data Engineering"],
   },
 ];
 
